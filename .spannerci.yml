@@ -11,4 +11,4 @@ testing:
        devices:
            - $DEVID_1
    #    ota_method: particle
-   #    binary: auto
+       binary: auto
