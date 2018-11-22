@@ -5,9 +5,11 @@ build_binary:
      
 testing:
    pre_flight: echo "....."
+   on_success: echo "sssssssssssssssssssssssssssssssssssssssss"
    script: testing/sample-test-script.py
-   post_flight: ls
    post_flight: echo "++++++"
+   on_failure: echo "fffffffffffffffffffffffffffffffffffffffffffff"
+   
    #env_vars:
    #     - $SPN_PARTICLE_TOKEN
    #device_update:
