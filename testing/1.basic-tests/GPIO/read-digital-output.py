@@ -13,10 +13,10 @@
 # and connect the D5 pin to GND, and the D7 pin to 3V3.
 
 import time
-from Spanner import Spanner
+import Spanner
 from Testboard import Testboard
 
-testboard = Testboard("Wubby_Test")
+testboard = Testboard("my")
 
 # Our device's 1st Output Pin will be connected to the Testboard's D7, making it
 # our Input Pin 1
@@ -35,7 +35,7 @@ def validate_digital_input_low():
     # check PIN state
     value = testboard.digitalRead(INPUT_PIN_2)
 
-    spanner.assertFalse(value);
+    Spanner.assertFalse(value);
 
 if __name__ == "__main__":
 
