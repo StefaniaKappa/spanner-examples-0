@@ -8,7 +8,6 @@
 #   env: shipper.yml
 #   repos: /kappa/kippo
 testing:
-    script: testing/basic-tests/GPIO/read-digital-output/scenario.py
     device_update:
         devices:
             - $my
