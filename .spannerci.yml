@@ -8,14 +8,14 @@
 #   env: shipper.yml
 #   repos: /kappa/kippo
 testing:
-   script: testing/sample-test-script.py
-     env_vars:
-        - $SPN_PARTICLE_TOKEN
-   device_update:
-       devices:
-           - $my
-       ota_method: particle
-       binary: auto
+    script: testing/sample-test-script.py
+      env_vars:
+         - $SPN_PARTICLE_TOKEN
+    device_update:
+        devices:
+            - $my
+        ota_method: particle
+        binary: auto
 #    env_vars: 
 #       - $myd
 #    device_update:
