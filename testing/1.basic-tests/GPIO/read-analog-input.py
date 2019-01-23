@@ -14,10 +14,10 @@
 # and connect the A0 pin to 3V3, and the A4 pin to GND.
 
 import time
-from Spanner import Spanner
+import Spanner
 from Testboard import Testboard
 
-testboard = Testboard("Wubby_Test")
+testboard = Testboard("my")
 
 # Our device's 1st Analog Output Pin will be connected to the Testboard's A0,
 # making it our Input Pin 1
