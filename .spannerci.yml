@@ -9,7 +9,6 @@
 #   repos: /kappa/kippo
 testing:
    script: testing/1.basic-tests/GPIO/read-digital-output.py
-
    env_vars: 
        - $SPN_PARTICLE_TOKEN
 #        ota_method: particle
