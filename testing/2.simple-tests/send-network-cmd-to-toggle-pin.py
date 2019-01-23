@@ -17,7 +17,7 @@
 import time
 import os
 import requests
-from Spanner import Spanner
+import Spanner
 from Testboard import Testboard
 
 ifttt_key = os.environ['IFTTT_API_KEY']
