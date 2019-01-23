@@ -8,9 +8,12 @@
 #   env: shipper.yml
 #   repos: /kappa/kippo
 testing:
-   pre_flight: "echo ....."
-   script: testing/sample-test-script.py
-
+    script: testing/basic-tests/GPIO/read-digital-output/scenario.py
+    device_update:
+        devices:
+            - $my
+        ota_method: particle
+        binary: auto
 #    env_vars: 
 #       - $myd
 #    device_update:
