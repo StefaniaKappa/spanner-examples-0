@@ -1,8 +1,12 @@
 build_binary:
-     builder: 'particle photon'
-     binary_name: 'firmware/target/firmware.bin'
-     script: testing/sample-test-script.py
-     pre_flight: echo "++++++"
+    pre_flight: 
+       - echo "hello there"
+       - cd ../ && echo $PWD
+    builder: 'particle photon'
+    binary_name: 'app/target/app.bin'
+    script: echo 'hello there' && cd $SPN_BUILDER_SDK && make PLATFORM=photon APPDIR=$SPN_PROJECT_DIR/app
+    post_flight: 
+       - echo "finito la musica"
 # device_update_intergration:
 #   ota_method: spanner shipper
 #   env: shipper.yml
