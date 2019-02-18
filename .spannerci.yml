@@ -2,7 +2,7 @@ build_binary:
     pre_flight: 
        - echo "hello there"
        - cd ../ && echo $PWD
-    script: echo 'hello there' && cd $SPN_BUILDER_SDK && make PLATFORM=photon APPDIR=$SPN_PROJECT_DIR/app
+    script: echo 'hello there' 
     post_flight: 
        - echo "finito la musica"
 # device_update_intergration:
