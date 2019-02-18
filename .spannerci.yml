@@ -11,8 +11,8 @@ build_binary:
 #   ota_method: spanner shipper
 #   env: shipper.yml
 #   repos: /kappa/kippo
-# testing:
-#    script: testing/sample-test-script.py
+testing:
+   script: testing/sample-test-script.py
 # build_binary:
 #     pre_flight:
 #        - echo "hello there"
