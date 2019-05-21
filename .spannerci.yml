@@ -1,18 +1,18 @@
-build_binary:
-    pre_flight: 
-       - echo "hello there"
-       - cd ../ && echo $PWD
-    script: echo 'hello there' && cd $SPN_BUILDER_SDK && make PLATFORM=photon APPDIR=$SPN_PROJECT_DIR/app
-    builder: 'particle'
-    binary_name: 'app/target/app.bin' 
-    post_flight: 
-       - echo "finito la musica"
+# build_binary:
+#     pre_flight: 
+#        - echo "hello there"
+#        - cd ../ && echo $PWD
+#     script: echo 'hello there' && cd $SPN_BUILDER_SDK && make PLATFORM=photon APPDIR=$SPN_PROJECT_DIR/app
+#     builder: 'particle'
+#     binary_name: 'app/target/app.bin' 
+#     post_flight: 
+#        - echo "finito la musica"
 # device_update_intergration:
 #   ota_method: spanner shipper
 #   env: shipper.yml
 #   repos: /kappa/kippo
-# testing:
-#    script: testing/sample-test-script.py
+testing:
+   script: testing/sample-test-script.py
 # build_binary:
 #     pre_flight:
 #        - echo "hello there"
