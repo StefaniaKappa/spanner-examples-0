@@ -1,12 +1,14 @@
 build_binary:
     pre_flight: 
-       - echo "hello there"
-       - cd ../ && echo $PWD
-    script: echo 'hello there' && cd $SPN_BUILDER_SDK && make PLATFORM=photon APPDIR=$SPN_PROJECT_DIR/app
+        - echo "hello there"
+        - cd ../ && echo $PWD
+    script: echo 'hello there'
     builder: 'particle'
-    binary_name: 'app/target/app.bin' 
+    artifacts:
+        -  'testing/'
     post_flight: 
-       - echo "finito la musica"
+        - echo "finito la musica"
+
 # device_update_intergration:
 #   ota_method: spanner shipper
 #   env: shipper.yml
