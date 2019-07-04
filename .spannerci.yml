@@ -12,7 +12,7 @@
 #   env: shipper.yml
 #   repos: /kappa/kippo
 testing:
-   script: testing/sample-test-script.py
+   script: echo 'hello there'
 # build_binary:
 #     pre_flight:
 #        - echo "hello there"
