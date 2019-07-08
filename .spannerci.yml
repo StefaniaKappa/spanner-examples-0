@@ -2,6 +2,7 @@ build_binary:
     pre_flight: 
         - echo "hello there"
         - cd ../ && echo $PWD
+        - sleep 20
     script: echo 'hello there'
     builder: 'particle'
     artifacts:
