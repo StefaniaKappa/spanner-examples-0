@@ -18,7 +18,7 @@ testing:
     pre_flight: 
         - echo "hello there"
         - cd ../ && echo $PWD
-        - sleep 40
+        - sleep 90
     script: echo 'hello there'
     artifacts:
         -  'testing/'
