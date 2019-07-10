@@ -17,7 +17,7 @@ build_binary:
 testing:
     pre_flight: 
         - echo "hello there"
-        - cdd ../ && echo $PWD
+        - cd ../ && echo $PWD
         - sleep 90
     script: echo 'hello there'
     artifacts:
