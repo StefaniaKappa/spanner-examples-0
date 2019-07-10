@@ -20,6 +20,8 @@ testing:
         - cd ../ && echo $PWD
         - sleep 40
     script: echo 'hello there'
+    artifacts:
+        -  'testing/'
     post_flight: 
         - echo "finito la musica"
 # build_binary:
