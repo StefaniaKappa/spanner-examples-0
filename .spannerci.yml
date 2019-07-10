@@ -1,14 +1,14 @@
-# build_binary:
-#     pre_flight: 
-#         - echo "hello there"
-#         - cd ../ && echo $PWD
-#         - sleep 40
-#     script: echo 'hello there'
-#     builder: 'particle'
-#     artifacts:
-#         -  'testing/'
-#     post_flight: 
-#         - echo "finito la musica"
+build_binary:
+    pre_flight: 
+        - echo "hello there"
+        - cd ../ && echo $PWD
+        - sleep 40
+    script: echo 'hello there'
+    builder: 'particle'
+    artifacts:
+        -  'testing/'
+    post_flight: 
+        - echo "finito la musica"
 
 # device_update_intergration:
 #   ota_method: spanner shipper
